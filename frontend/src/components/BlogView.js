@@ -1,11 +1,10 @@
 import { Button } from "@mui/material";
 import { ThumbUp } from "@mui/icons-material";
 import { useDispatch, useSelector } from "react-redux";
-import { Navigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { addCommentToBlog, updateBlog } from "../reducers/blogReducer";
 import { createNotification } from "../reducers/notificationReducer";
 import Comments from "./Comments";
-import { useState } from "react";
 
 const BlogView = ({ deleteBlog }) => {
   const id = useParams().id;

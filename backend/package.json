@@ -7,7 +7,10 @@
     "test": "cross-env NODE_ENV=test jest --verbose --runInBand --forceExit",
     "start": "cross-env NODE_ENV=production node index.js",
     "dev": "cross-env NODE_ENV=development nodemon index.js",
-    "start:test": "cross-env NODE_ENV=test node index.js"
+    "start:test": "cross-env NODE_ENV=test node index.js",
+    "build:ui": "rm -R build && cd ../frontend && npm run build && cp -r build ../backend",
+    "deploy": "git push heroku master",
+    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push heroku master && npm run deploy"
   },
   "author": "Samu Uunonen",
   "license": "ISC",
@@ -28,5 +31,8 @@
   },
   "jest": {
     "testEnvironment": "node"
+  },
+  "engines": {
+    "node": "14.17.3"
   }
 }

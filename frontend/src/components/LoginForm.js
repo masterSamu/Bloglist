@@ -1,7 +1,6 @@
 import { useState } from "react";
 import PropTypes from "prop-types";
 import { logInUser } from "../reducers/userReducer";
-import { createNotification } from "../reducers/notificationReducer";
 import { useDispatch, useSelector } from "react-redux";
 import { InputLabel, TextField, Button } from "@mui/material";
 
