@@ -5,8 +5,8 @@ This project was a course exercise at FullStack Open 2022 course, from Helsinki 
 
 ## Demo application
 https://desolate-taiga-83913.herokuapp.com/  
-* user: samu  
-* password: salainen
+user: samu  
+password: salainen
 
 ## Technologies used in this project:
 ### Backend
