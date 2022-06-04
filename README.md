@@ -12,6 +12,7 @@ This project was a course exercise at FullStack Open 2022 course, from Helsinki 
 - JWT
 - bcrypt
 - Jest
+- Cross-env
 
 ### Frontend
 - React
